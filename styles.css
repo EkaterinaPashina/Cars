@@ -1,0 +1,12 @@
+body {
+    font-family: 'Ysabeau SC', sans-serif;
+    text-align: center;
+}
+
+img {
+    width: 40rem;
+}
+
+.price {
+    font-weight: bold;
+}
