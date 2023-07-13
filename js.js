@@ -43,9 +43,9 @@ class Transport {
 
     getInfo() {
         return {
+            id: this.id,
             type: this.type,
             brand: this.brand,
-            price: this.price,
         }
     }
 
@@ -95,7 +95,7 @@ let transports = [id1, id2, id3, id4];
 console.log(transports);
 
 for (trans of transports) {
-    parent = document.getElementById(`id${trans.id}`);
+    let parent = document.getElementById(`id${trans.id}`);
     if (trans.type === "car") {
         parent.innerHTML = `<h2>${trans.brand}</h2><img src = ${trans.image} /><p>Количество дверей: ${trans.doors}</p><p>${trans.price}р</p>`;
     }
